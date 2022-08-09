@@ -1,0 +1,14 @@
+<script>
+
+    const products = [
+        { product: "camiseta", uni: 3 },
+        { product: "calça", uni: 2 },
+        { product: "blusa", uni: 2 },
+        { product: "tenis", uni: 1 },
+        { product: "boné", uni: 1 },
+    ]
+
+    const totalProducts = products.reduce(( prevVal, elem ) => prevVal + elem.uni, 0 );
+    console.log( totalProducts )
+
+</script>
