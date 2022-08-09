@@ -1,0 +1,25 @@
+<script>
+
+//console.log( [ 1, 2, 3, ].includes( 2 ) )
+
+/*--------------------------------------------------------*/
+
+const people = [ "Atenor", "Francisco", "Tiringa", "Mauricio" ];
+
+//console.log( people.includes( "Heder" ) );
+
+
+/*------------------------------------------------------------*/
+
+const peopleFilter = [
+    { id: 11, name: "Atenor", age: 23, group: "user" },
+    { id: 22, name: "Francisco", age: 45, group: "user" },
+    { id: 45, name: "Tiringa", age: 17, group: "user" },
+    { id: 98, name: "Mauricio", age: 42, group: "user" }
+]
+
+const filterUsers = peopleFilter.filter( p => p.name.includes( "ci" ) )
+
+console.log( filterUsers );
+
+</script>
