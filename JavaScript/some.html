@@ -1,0 +1,26 @@
+<script>
+
+    function numberPrime( value ) {
+        for ( let i = 2; i < value; i++ ) {
+            if ( value % i === 0 ) {
+                return false
+            }
+        }
+        return value > 1
+    }
+
+    const numberArray = [ 6, 8, 12, 14, 42 ]
+
+    //console.log( numberArray.some( numberPrime ) );
+
+/*------------------------------------------------------*/
+
+const team = [
+    { id: 12, name: "Topper harley", pilot: false },
+    { id: 44, name: "Topper harley", pilot: false },
+    { id: 56, name: "Topper harley", pilot: false },
+    { id: 88, name: "Topper harley", pilot: true },
+]
+console.log( team.some( person => person.pilot ))
+
+</script>
